@@ -65,6 +65,13 @@ public class Shuffler {
   */
   public static void perfectShuffle(int[] values) {
     // implementation code
+	  int k[] = 0;
+	  for(int j; j <= (cards.length + 1)/2; j++;) {
+		  cards[j] = shuffled[k];
+		  k += 2;
+	  }
+	  
+	
   }
 
   /** TODO: Complete the implementation for the given selectionShuffle algorithm
