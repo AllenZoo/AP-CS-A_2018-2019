@@ -114,7 +114,6 @@ public class Shuffler {
 		  temporary = values[i];
 		  values[i] = values[n];
 		  values[n] = values[i];
-		  
 	  }
 	  
   }
