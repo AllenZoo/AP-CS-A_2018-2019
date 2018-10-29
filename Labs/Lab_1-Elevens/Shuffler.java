@@ -112,7 +112,7 @@ public class Shuffler {
 		  int n = random.nextInt(i-1);
 		  int temporary = values[i];
 		  values[i] = values[n];
-		  values[n] = values[i];
+		  values[n] = temporary;
 	  }
 	  
   }
