@@ -109,9 +109,8 @@ public class Shuffler {
 	  }
 	  
 	  for(i = length - 1; i > 0; i--) {
-		 
-		  n = random.nextInt(i-1);
-		  temporary = values[i];
+		  int n = random.nextInt(i-1);
+		  int temporary = values[i];
 		  values[i] = values[n];
 		  values[n] = values[i];
 	  }
