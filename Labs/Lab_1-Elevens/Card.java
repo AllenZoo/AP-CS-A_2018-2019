@@ -25,7 +25,7 @@ public class Card {
   * @param pointValue is an int value containing the point value of the card
   */
   
-  public Class(rank, suit, pointValue) {
+  public Card(rank, suit, pointValue) {
 	  this.rank = rank;
 	  this.suit = suit;
 	  this.pointValue = pointValue;

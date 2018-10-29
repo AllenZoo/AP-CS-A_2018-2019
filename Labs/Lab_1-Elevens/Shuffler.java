@@ -6,7 +6,13 @@ import java.lang.Math;
 * This class provides a convenient way to test shuffling methods.
 */
 public class Shuffler {
-
+	
+  private List<Card> cards;
+	  
+  public Shuffler(List cards) {
+		this.cards = cards;
+	}
+  
   /**
   * The number of consecutive shuffle steps to be performed in each call
   * to each sorting procedure.
@@ -95,6 +101,21 @@ public class Shuffler {
   */
   public static void selectionShuffle(int[] values) {
     // implementation code
+	  int length = cards.length
+	  Random random = new Random();
+	  
+	  for(i = 0; i < length - 1; i++) {
+		  values[i] = cards[i];
+	  }
+	  
+	  for(i = length - 1; i > 0; i--) {
+		 
+		  n = random.nextInt(i-1);
+		  temporary = values[i];
+		  values[i] = values[n];
+		  values[n] = values[i];
+		  
+	  }
 	  
   }
 }
