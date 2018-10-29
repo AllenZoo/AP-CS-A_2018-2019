@@ -67,20 +67,15 @@ public class Shuffler {
   public static void perfectShuffle(int[] values) {
     // implementation code
 	  int k = 0;
-	  int[] a1 = new int[26];
-	  int[] a2 = new int[26];
-	  int[] a3 = new int[52];
-	  
-	  Random random = new Random();
-	  n = random.nextInt(5)+1;
-	  
 	  
 	  for(int j; j <= (cards.length + 1)/2; j++;) {
-		  cards[j] = shuffled[k];
+		  values[j] = cards[k];
 		  k += 2;
 	  }
+	  k = 1;
+	  
 	  for(int j = (cards.length + 1)/2; j < 52; j++;) {
-		  cards[j] = shuffled[k];
+		  values[j] = cards[k]
 		  k += 2;
 	  }
 	  
