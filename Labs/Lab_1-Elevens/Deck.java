@@ -35,7 +35,7 @@ public class Deck {
     this.cards = new ArrayList<Card>();
 
     // implementation code
-    Card(this.ranks, this.suits, this.values);
+    Card card = new Card(this.ranks, this.suits, this.values);
     shuffle();
   }
 

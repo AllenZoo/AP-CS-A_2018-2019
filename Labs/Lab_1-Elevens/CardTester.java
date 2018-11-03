@@ -12,11 +12,15 @@ public class CardTester {
     // HINT: use the overridden toString method
 	  
 	  //Rank, Suit, PointValue
-	  Card a = new Card("Ace","Spades", 1);
-	  card b = new Card("Two","Spades", 2);
-	  card c = new Card("Three", "Spade", 3);
+	  Card spade1 = new Card("1","Spades", 1);
+	  Card spade2 = new Card("2","Spades", 2);
+	  Card spade3 = new Card("3", "Spade", 3);
+	  Card spade4 = new Card("4"), "Spade", 4);
 	  
-	  toString(a);
-	  toString(b);
-	  toString(c);
+	  System.out.println(spade1.toString());
+	  System.out.println(spade2.toString());
+	  System.out.println(spade3.toString());
+	  
+	  System.out.println(spade1.compareCard(spade2));
+	  System.out.println(spade1.compareCard(spade3));
   }
